@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container for the Weather App -->
+    <div class="main-container">
+        <div class="container top">
+            <h1>Weather App</h1>
+            <!-- Form format for the search bar and submit button & error -->
+            <form action="" onsubmit="return false">
+                <input type="text" class="search" placeholder="Search by city name">
+                <button type="submit" class="btn">Submit</button>
+                <p class="error"></p>
+            </form>
+            <!--Location and  Weather Details -->
+            <section>
+                <div class="container">
+                    <div class="icon">
+                        <img src="" alt="" class="weather-icon">
+                    </div>
+                    <div class="location">
+                        <div class="city">Bengaluru, IN</div>
+                        <div class="date">Wednesday, Aug 03 2022</div>
+                    </div>
+                    <div class="current">
+                        <div class="temp">Temp: 25 <span>°C</span></div>
+                        <div class="weather">Weather: Sunny</div>
+                        <div class="temp-range">Temp Range: 10°C / 15°C</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+<!-- Javascript file link -->
+<script src="script.js"></script>
+</body>
+</html>

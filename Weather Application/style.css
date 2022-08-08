@@ -1,0 +1,140 @@
+/* Initial styling Using Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Styling for the whole body part */
+body {
+    background: linear-gradient(to right bottom, #ea2c62, #120078);
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling for the whole Weather container part  */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background: url(./images/weather.png);
+    background-size: cover;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+/* Styling for top container part*/
+.top {
+    text-align: center;
+    z-index: 999;
+}
+
+/* Styling for the Heading part */
+.top h1 {
+    color: white;
+    line-height: 2;
+    font-size: 60px;
+}
+
+/* Common Styling for the Search bar and Submit button part*/
+.top input,
+.top button {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: none; 
+}
+
+/* Styling for Search bar part */
+.top input {
+    background-color: rgba(0,0,0,.5);
+    border-bottom: solid 2px green;
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* Styling for the Inner Search box part */
+.top input:focus {
+    color: white;
+    font-size: 20px;
+}
+
+/* Color for the Search box placeholder part*/
+.top input::placeholder {
+    color: rgba(255,255,255.5);
+}
+
+/* Styling for the button part */
+.top button {
+    background-color: #db6400;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/* Color for the button hover part */
+.top button:hover {
+    background-color: #b05102;
+}
+
+/* Styling for the Error part */
+.top .error {
+    color: white;
+    font-size: 20px;
+}
+
+/* Icon Styling */
+.icon {
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* Styling for the Location part */
+.location {
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Styling Especially for City Name */
+.location .city {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Styling for the Weather Details */
+.current {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color: white;
+    text-align:center;
+    font-size: 20px;
+}
+
+.current > * {
+    padding-bottom: 10px;
+}
